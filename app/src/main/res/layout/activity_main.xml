@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main"
+    tools:context="com.goodyun.spindragon.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo_main_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        />
+
+
+<LinearLayout
+    android:layout_width="400dp"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:layout_marginBottom="24dp"
+    >
+
+    <ImageView
+        android:id="@+id/btn_start"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_select_gamestart"
+        android:clickable="true"
+        android:onClick="clickStart"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/btn_setting"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_select_setting_main"
+        android:clickable="true"
+        android:onClick="clicksetting"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/btn_exit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_select_exit"
+        android:clickable="true"
+        android:onClick="clickExit"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dialog_setting"
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ui_setting_back"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ui_setting_label_music" />
+
+            <ToggleButton
+                android:id="@+id/tb_music"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/tb_select_music"
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ui_setting_label_sound" />
+
+            <ToggleButton
+                android:id="@+id/tb_sound"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/tb_select_sound"
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ui_setting_label_vibrate" />
+
+            <ToggleButton
+                android:id="@+id/tb_vibrate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/tb_select_vibrate"
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/dialog_shop_check"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.5"
+            android:clickable="true"
+            android:onClick="clickBtn"
+            android:src="@drawable/check" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
